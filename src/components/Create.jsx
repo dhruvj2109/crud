@@ -23,7 +23,7 @@ const Create = () => {
 			age: users.age,
 			gender: users.gender
 		}))
-		getUserDetails()
+		// getUserDetails()
 	}
 	
 	useEffect(() => {
