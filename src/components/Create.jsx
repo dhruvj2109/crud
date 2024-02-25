@@ -67,7 +67,7 @@ const Create = () => {
 					</label>
 				</div>
 				<button type="submit" class="btn btn-primary">
-					Approve
+					Approved
 				</button>
 			</form>
 
