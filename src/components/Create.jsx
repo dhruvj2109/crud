@@ -23,7 +23,7 @@ const Create = () => {
 			age: users.age,
 			gender: users.gender
 		}))
-		getUserDetails()
+		// getUserDetails()
 	}
 	
 	useEffect(() => {
@@ -32,7 +32,7 @@ const Create = () => {
 
 	const getUserDetails = async () => {
 		const response = await axios.get("https://65d448e73f1ab8c63434cb18.mockapi.io/crud")
-		setUserData(response.data, "reeponse")
+		setUserData(response.data)
 		
 	}
 
@@ -66,9 +66,9 @@ const Create = () => {
 					Female
 					</label>
 				</div>
-				<button type="submit" class="btn btn-primary">
+				{/* <button type="submit" class="btn btn-primary">
 					Submit
-				</button>
+				</button> */}
 			</form>
 
 			
