@@ -66,9 +66,9 @@ const Create = () => {
 					Female
 					</label>
 				</div>
-				{/* <button type="submit" class="btn btn-primary">
-					Submit
-				</button> */}
+				<button type="submit" class="btn btn-primary">
+					Approve
+				</button>
 			</form>
 
 			
