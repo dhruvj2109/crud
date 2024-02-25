@@ -39,39 +39,37 @@ const Create = () => {
 	return (
 		<div>
 			{userData?.map(item => (
-				<div style={{ display: "flex", alignItems: "center", justifyContent: "space-around" }}><p>{item?.name}</p><p>{item?.age}</p><p>{item?.gender }</p></div>
+				<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+					<p>{item?.name}</p>
+					<p>{item?.age}</p>
+					<p>{item?.gender}</p>
+				</div>
 			))}
 			<form className="w-50 mx-auto my-56" onSubmit={handleSubmit}>
 				<div class="mb-3">
 					<label class="form-label">Name</label>
-					<input type="text" class="form-control" name='name' onChange={getUserData}/>
+					<input type="text" class="form-control" name="name" onChange={getUserData} />
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Email</label>
-					<input class="form-control" type="email" name='email' onChange={getUserData}/>
+					<input class="form-control" type="email" name="email" onChange={getUserData} />
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Age</label>
-					<input type='number' class="form-control"  name='age' onChange={getUserData}/>
+					<input type="number" class="form-control" name="age" onChange={getUserData} />
 				</div>
 				<div class="mb-3">
-					<input class="form-check-input" type="radio" value="male" name='gender' onChange={getUserData} />
-					<label class="form-check-label" >
-						Male
-					</label>
+					<input class="form-check-input" type="radio" value="male" name="gender" onChange={getUserData} />
+					<label class="form-check-label">Male</label>
 				</div>
 				<div class="mb-3">
-					<input class="form-check-input" type="radio" value="female" name='gender' onChange={getUserData}/>
-					<label class="form-check-label" >
-					Female
-					</label>
+					<input class="form-check-input" type="radio" value="female" name="gender" onChange={getUserData} />
+					<label class="form-check-label">Femaleeeeee</label>
 				</div>
 				<button type="submit" class="btn btn-primary">
 					Approved
 				</button>
 			</form>
-
-			
 		</div>
 	);
 };
